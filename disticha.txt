@@ -429,5 +429,3 @@ Fac discas multa, vita nil discere velle.
 
 4.49. Miraris verbis nudis me scribere versus?
 Hoc brevitas fecit, sensus coniungere binos.
-
-END OF FILE
