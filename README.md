@@ -12,6 +12,22 @@ You'll need NPM, NodeJS, and the twit module:
 
 ```sudo npm install twit --save```
 
+You'll also need your Twitter API keys.
+1. Log in to Twitter on the web and add your mobile or Google Voice number to your account:
+ * Settings > Mobile
+ * You can delete itonce your keys are generated
+2. Visit [Twitter Apps](https://apps.twitter.com/) and create your app keys
+
+For running locally, you can keep a simple shell script (added to .gitignore to ensure it isn't committed) that passes your keys when it executes:
+
+
+```
+#!/path/to/shell
+CONSUMER_KEY='…' CONSUMER_SECRET='…' ACCESS_TOKEN='…' ACCESS_TOKEN_SECRET='…' node index.js
+```
+
+Replace the ellipses with the keys obtained from Twitter. I named mine `local.sh`.
+
 ## Usage
 
 If you build something from this bot, you'll probably deployit through Heroku, and there are some things you should know.
@@ -26,4 +42,11 @@ heroku config:set CONSUMER_KEY=…
 heroku config:set CONSUMER_SECRET=…
 heroku config:set ACCESS_TOKEN=…
 heroku config:set ACCESS_TOKEN_SECRET=…
+```
+
+Alternatively, you can pull the .env file from Heroku, edit it locally in your editor of choice (it's a hidden file, but a good editor should see it), and then push the new .env file back to Heroku:
+
+```
+heroku config:pull
+heroku config:push
 ```
