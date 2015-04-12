@@ -4,6 +4,8 @@ This twitterbot posts random distichs (bits of moral teaching in the form of hex
 
 The code itself was cobbled carelessly from various sources and wrestled with through trial and error till it finally worked.
 
+The resulting bot is [@DistichaCatonis](https://twitter.com/DistichaCatonis/).
+
 ## Installation
 
 You'll need NPM, NodeJS, and the twit module:
