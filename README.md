@@ -33,7 +33,7 @@ Replace the ellipses with the keys obtained from Twitter. I named mine `local.sh
 
 ## Usage
 
-If you build something from this bot, you'll probably deployit through Heroku, and there are some things you should know.
+If you build something from this bot, you'll probably deploy it through Heroku, and there are some things you should know.
 
 1. You don't need to pay for dynos. One dyno is enough.
 2. Heroku scales a web dyno by default, but your Twitter bot will use a single worker dyno. You'll need to scale it yourself on the command line:  
