@@ -17,7 +17,7 @@ You'll also need your Twitter API keys.
 1. Log in to Twitter on the web and add your mobile or Google Voice number to your account:
 
  * Settings > Mobile
- * You can delete itonce your keys are generated
+ * You can delete it once your keys are generated
 
 2. Visit [Twitter Apps](https://apps.twitter.com/) and create your app keys
 
