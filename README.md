@@ -13,9 +13,12 @@ You'll need NPM, NodeJS, and the twit module:
 ```sudo npm install twit --save```
 
 You'll also need your Twitter API keys.
+
 1. Log in to Twitter on the web and add your mobile or Google Voice number to your account:
+
  * Settings > Mobile
- * You can delete itonce your keys are generated
+ * You can delete it once your keys are generated
+
 2. Visit [Twitter Apps](https://apps.twitter.com/) and create your app keys
 
 For running locally, you can keep a simple shell script (added to .gitignore to ensure it isn't committed) that passes your keys when it executes:
@@ -30,7 +33,7 @@ Replace the ellipses with the keys obtained from Twitter. I named mine `local.sh
 
 ## Usage
 
-If you build something from this bot, you'll probably deployit through Heroku, and there are some things you should know.
+If you build something from this bot, you'll probably deploy it through Heroku, and there are some things you should know.
 
 1. You don't need to pay for dynos. One dyno is enough.
 2. Heroku scales a web dyno by default, but your Twitter bot will use a single worker dyno. You'll need to scale it yourself on the command line:  
